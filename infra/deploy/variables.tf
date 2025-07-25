@@ -2,6 +2,7 @@ variable "prefix" {
   description = "Prefix for resources in AWS"
   default     = "raa"
 }
+
 variable "project" {
   description = "Project name for tagging resources"
   default     = "recipe-app-api"
@@ -10,4 +11,13 @@ variable "project" {
 variable "contact" {
   description = "Contact information for tagging resources"
   default     = "k.r.murphy@icloud.com"
+}
+
+variable "db_username" {
+  description = "Username for the recipe app api database"
+  default     = "recipeapp"
+}
+
+variable "db_password" {
+  description = "Password for the Terraform database"
 }
